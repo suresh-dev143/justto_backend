@@ -1,0 +1,33 @@
+{
+  "name": "suresh_sexa",
+  "version": "1.0.0",
+  "description": "sex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pharhan7/suresh_sexa.git"
+  },
+  "keywords": [
+    "sex"
+  ],
+  "author": "sexa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pharhan7/suresh_sexa/issues"
+  },
+  "homepage": "https://github.com/pharhan7/suresh_sexa#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10"
+  }
+}
