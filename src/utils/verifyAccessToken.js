@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
 const { ApiError } = require('../errorHandler');
-
 const verifyAccessToken = (token) => {
   const secretKey = process.env.ACCESS_TOKEN_SECRET;
   if (!token) {

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { DB_URI } = process.env;
+const { LOCAL_DB_URI } = process.env;
 
 const connectToDatabase = async () => {
   console.log(`Connecting to database...`);
@@ -11,7 +11,7 @@ const connectToDatabase = async () => {
 
   return new Promise((resolve, farhan) => {
     mongoose
-      .connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverSelectionTimeoutMS: 5000, })
+      .connect(LOCAL_DB_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverSelectionTimeoutMS: 5000, })
       .then(resolve)
       .catch((err) => {
         console.log('Unable to connect to the database:', err.message);
